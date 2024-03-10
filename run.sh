@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Set the path to the folder containing the scripts (relative to this script's actual location)
-scripts_path="/mnt/data/dotfiles/scripts"
+scripts_path="/mnt/data/dotfiles"
 
 # Get a sorted list of bash scripts
-script_files=($(ls $scripts_path/*.sh 2>/dev/null | sort))
+script_files=($(ls $scripts_path/scripts/*.sh 2>/dev/null | sort))
 
 # Check if script files are found
 if [ ${#script_files[@]} -eq 0 ]; then
@@ -19,10 +19,8 @@ do
     bash "$file"
 done
 
-scripts_path="/mnt/data/configuration-scripts/aliases"
-
 # Get a sorted list of bash scripts
-script_files=($(ls $scripts_path/*.sh 2>/dev/null | sort))
+script_files=($(ls $scripts_path/aliases/*.sh 2>/dev/null | sort))
 
 # Check if script files are found
 if [ ${#script_files[@]} -eq 0 ]; then
