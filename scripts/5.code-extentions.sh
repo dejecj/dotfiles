@@ -3,6 +3,7 @@
 # List of VSCode extension IDs to install
 extensions=(
     svelte.svelte-vscode
+    mintlify.document
 )
 
 # Loop through the list and install each extension
