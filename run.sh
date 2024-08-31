@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the path to the folder containing the scripts (relative to this script's actual location)
-scripts_path="/mnt/data/dotfiles"
+scripts_path="$HOME/dotfiles"
 
 # Get a sorted list of bash scripts
 script_files=($(ls $scripts_path/scripts/*.sh 2>/dev/null | sort))
